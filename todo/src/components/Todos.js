@@ -1,6 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { completeTodo, removeTodo } from '../actions/actions';
+import uuidv4 from 'uuid'
+
 
 const style = { backgroundColor: '#CCC', color: 'gray' };
 const Todos = props => {
@@ -10,7 +12,7 @@ const Todos = props => {
         <li
           style={todo.completed ? style : null}
           onClick={() => props.completeTodo(todo.id)}
-          key={todo.id}
+          key={uuidv4()}
         >
           {todo.text}
         </li>
