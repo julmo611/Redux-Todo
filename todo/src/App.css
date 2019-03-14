@@ -1,0 +1,61 @@
+body {
+  background-color: #212222;
+}
+.App {
+  width: 400px;
+  margin: 0 auto;
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+}
+.App-intro {
+  margin: 30px auto; 
+}
+
+
+.App input {
+  width: 90%;
+  margin: 10px auto;
+  display: block;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 5px;
+  border: none;
+  background-color: black;
+  color: #fff;
+  font-size: 16px;
+}
+
+.App input::placeholder {
+  color: #fff;
+}
+
+.App button {
+  display: block;
+  width: 60%;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.App-intro .clear-completed {
+  width: 100%;
+  margin: 20px auto;
+  border: 1px solid orange;
+  background: orange;
+}
+
+.App-intro .clear-completed:hover {
+  background-color: #a06902;
+  cursor: pointer;
+}
+
+.App-intro li {
+  list-style: none;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
